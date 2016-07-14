@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+
+ */
+
+function custom_contact_form_demo_form_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id)
+{
+    $form['#theme'] = ['demo_form_theme'];
+}
+
+/**
+ * Implements hook_theme().
+ */
+function custom_contact_theme($existing, $type, $theme, $path)
+{
+    return array(
+        'demo_form_theme' => array(
+            'render element' => 'form',
+            'template' => 'demo_form_theme',
+            'path' => $path . '/theme',
+        ),
+    );
+}
