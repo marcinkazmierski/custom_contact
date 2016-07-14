@@ -1,2 +1,3 @@
-# custom_contact
-Drupal 8 - module - contact page and contact block with form.
+# Custom contact module for Drupal 8
+
+With contact page, contact block and form.
