@@ -1,0 +1,6 @@
+# twig_extensions
+name: Custom contact
+type: module
+description: Custom contact module
+package: Custom
+core: 8.x
