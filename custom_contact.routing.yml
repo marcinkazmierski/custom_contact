@@ -1,0 +1,6 @@
+custom_contact:
+    path: /contact-page
+    defaults:
+        _controller: Drupal\custom_contact\Controller\CustomContactController::page
+    requirements:
+        _permission: 'access content'
