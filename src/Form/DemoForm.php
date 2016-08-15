@@ -25,11 +25,13 @@ class DemoForm extends FormBase
         $form['email'] = array(
             '#type' => 'email',
             '#required' => TRUE,
-            '#title' => $this->t('Your email address.')
+            '#title' => $this->t('Your email address.'),
+            '#attributes'=>array('class'=>array('form-control'))
         );
         $form['submit'] = array(
             '#type' => 'submit',
             '#value' => $this->t('Submit'),
+            '#attributes'=>array('class'=>array('btn btn-success'))
         );
 
         return $form;
